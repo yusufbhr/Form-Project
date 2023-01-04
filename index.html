@@ -19,13 +19,13 @@
                         <h1>İletişim Formu</h1>
                     </div>
                     <div class="c-item-01">
-                        <input type="text" placeholder="AD">
-                        <input type="text" placeholder="SOYAD">
-                        <input type="text" placeholder="MAIL">
-                        <input type="text" placeholder="TELEFON">
+                        <input type="text" id="name" placeholder="AD">
+                        <input type="text" id="surname" placeholder="SOYAD">
+                        <input type="text" id="mail" placeholder="MAIL">
+                        <input type="text" id="phone" placeholder="TELEFON">
                     </div>
                     <div class="c-item-02">
-                        <select name="" id="">
+                        <select name="" id="select">
                             <option value="1" class="option">Mesaj Kategorisi</option>
                             <option value="2" class="option">Kurum Hakkında</option>
                             <option value="3" class="option">Proje Hakkında</option>
@@ -33,7 +33,7 @@
                             <option value="5" class="option">Satın Alma</option>
                             <option value="6" class="option">Diğer</option>
                         </select>
-                        <input type="text" placeholder="MESAJ">
+                        <input type="text" id="mesaj" placeholder="MESAJ">
                     </div>
                     <div class="c-item-03">
                         <p>Kampanyalardan telefon, SMS ve e-posta yoluyla haberdar olmak ister misiniz? *</p>
@@ -47,12 +47,13 @@
                         </div>
                     </div>
                     <div class="c-item-04">
-                        <a href="#">GÖNDER</a>
+                        <a onclick="Form.Actions.submit()">GÖNDER</a>
                     </div>
                 </form>
             </div>
         </section>
     </main>
+    <script src="Content/Js/Form.js"></script>
 </body>
 
 </html>
